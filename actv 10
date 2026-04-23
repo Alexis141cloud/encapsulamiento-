@@ -1,0 +1,18 @@
+class Circulo:
+    def __init__(self, radio):
+        if radio > 0:
+            self._radio = radio
+        else:
+            self._radio = 1
+
+    def area(self):
+        return 3.14 * self._radio ** 2
+
+    def circunferencia(self):
+        return 2 * 3.14 * self._radio
+
+    def set_radio(self, radio):
+        if radio > 0:
+            self._radio = radio
+        else:
+            print("Radio no válido")
